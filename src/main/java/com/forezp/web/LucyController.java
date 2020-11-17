@@ -29,7 +29,7 @@ public class LucyController {
     User user;
     @RequestMapping(value = "/user")
     public String user(){
-        return user.getName()+user.getAge();
+        return user.getName()+"--"+user.getAge();
     }
 
     @RequestMapping(value = "/redis")
