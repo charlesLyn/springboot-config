@@ -8,6 +8,8 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.logging.Logger;
+
 /**
  * Created by fangzhipeng on 2017/4/18.
  */
@@ -29,7 +31,7 @@ public class LucyController {
     User user;
     @RequestMapping(value = "/user")
     public String user(){
-        return user.getName()+"--"+user.getAge();
+        return user.getName()+"--:"+user.getAge() + ":BMS2的现有业务：主要就是这两大块: 订单流转（销售单/物流单/收款单）以及 商品出入库";
     }
 
     @RequestMapping(value = "/redis")
